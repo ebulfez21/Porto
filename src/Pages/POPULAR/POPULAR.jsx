@@ -9,7 +9,7 @@ const Popular = () => {
         <div className='PraductContainer'>
           <div>
             <a href='#'>
-              <img src='/public/img/Praduct/product-1.jpg' alt='' />
+              <img src='/img/Praduct/product-1.jpg' alt='' />
               <p className='CategoryName'>CATEGORY</p>
               <p className='PraductName'>Black Men Shoes</p>
               <div className='IconStar'>
@@ -34,7 +34,7 @@ const Popular = () => {
           </div>
           <div>
             <a href='#'>
-              <img src='/public/img/Praduct/product-2-2.jpg' alt='' />
+              <img src='/img/Praduct/product-2-2.jpg' alt='' />
               <p className='CategoryName'>CATEGORY</p>
               <p className='PraductName'>Black Men Shoes</p>
               <div className='IconStar'>
@@ -57,7 +57,7 @@ const Popular = () => {
           </div>
           <div>
             <a href='#'>
-              <img src='/public/img/Praduct/product-3.jpg' alt='' />
+              <img src='/img/Praduct/product-3.jpg' alt='' />
               <p className='CategoryName'>CATEGORY</p>
               <p className='PraductName'>Black Men Shoes</p>
               <div className='IconStar'>
@@ -80,7 +80,7 @@ const Popular = () => {
           </div>
           <div>
             <a href='#'>
-              <img src='/public/img/Praduct/product-4-2.jpg' alt='' />
+              <img src='/img/Praduct/product-4-2.jpg' alt='' />
               <p className='CategoryName'>CATEGORY</p>
               <p className='PraductName'>Black Men Shoes</p>
               <div className='IconStar'>
@@ -103,7 +103,7 @@ const Popular = () => {
           </div>
           <div>
             <a href='#'>
-              <img src='/public/img/Praduct/product-5.jpg' alt='' />
+              <img src='/img/Praduct/product-5.jpg' alt='' />
               <p className='CategoryName'>CATEGORY</p>
               <p className='PraductName'>Black Men Shoes</p>
               <div className='IconStar'>
@@ -126,7 +126,7 @@ const Popular = () => {
           </div>
           <div>
             <a href='#'>
-              <img src='/public/img/Praduct/product-6-2.jpg' alt='' />
+              <img src='/img/Praduct/product-6-2.jpg' alt='' />
               <p className='CategoryName'>CATEGORY</p>
               <p className='PraductName'>Black Men Shoes</p>
               <div className='IconStar'>
@@ -150,7 +150,7 @@ const Popular = () => {
           </div>
           <div>
             <a href='#'>
-              <img src='/public/img/Praduct/product-7.jpg' alt='' />
+              <img src='/img/Praduct/product-7.jpg' alt='' />
               <p className='CategoryName'>CATEGORY</p>
               <p className='PraductName'>Black Men Shoes</p>
               <div className='IconStar'>
@@ -173,7 +173,7 @@ const Popular = () => {
           </div>
           <div>
             <a href='#'>
-              <img src='/public/img/Praduct/product-8-2.jpg' alt='' />
+              <img src='/img/Praduct/product-8-2.jpg' alt='' />
               <p className='CategoryName'>CATEGORY</p>
               <p className='PraductName'>Black Men Shoes</p>
               <div className='IconStar'>
@@ -196,7 +196,7 @@ const Popular = () => {
           </div>
           <div>
             <a href='#'>
-              <img src='/public/img/Praduct/product-9-2.jpg' alt='' />
+              <img src='/img/Praduct/product-9-2.jpg' alt='' />
               <p className='CategoryName'>CATEGORY</p>
               <p className='PraductName'>Black Men Shoes</p>
               <div className='IconStar'>
@@ -219,7 +219,7 @@ const Popular = () => {
           </div>
           <div>
             <a href='#'>
-              <img src='/public/img/Praduct/product-10.jpg' alt='' />
+              <img src='/img/Praduct/product-10.jpg' alt='' />
               <p className='CategoryName'>CATEGORY</p>
               <p className='PraductName'>Black Men Shoes</p>
               <div className='IconStar'>
@@ -242,7 +242,7 @@ const Popular = () => {
           </div>
           <div>
             <a href='#'>
-              <img src='/public/img/Praduct/product-11.jpg' alt='' />
+              <img src='/img/Praduct/product-11.jpg' alt='' />
               <p className='CategoryName'>CATEGORY</p>
               <p className='PraductName'>Black Men Shoes</p>
               <div className='IconStar'>
@@ -265,7 +265,7 @@ const Popular = () => {
           </div>
           <div>
             <a href='#'>
-              <img src='/public/img/Praduct/product-12-2.jpg' alt='' />
+              <img src='/img/Praduct/product-12-2.jpg' alt='' />
               <p className='CategoryName'>CATEGORY</p>
               <p className='PraductName'>Black Men Shoes</p>
               <div className='IconStar'>

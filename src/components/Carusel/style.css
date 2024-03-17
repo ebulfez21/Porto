@@ -1,0 +1,112 @@
+.Box {
+  position: relative;
+
+  top: 0 !important;
+}
+.BoxImg {
+  height: 100vh;
+}
+
+.CarouselText {
+  top: 25%;
+  left: 2%;
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.CarouselText h2 {
+  font-size: 52px;
+  font-weight: 900;
+  width: 100%;
+  color: rgb(0, 0, 0);
+  font-family: "Kablammo", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "MORF" 0;
+}
+.CarouselText p {
+  font-weight: 700;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+
+  width: 100%;
+}
+.CarouselText p:nth-child(2) {
+  font-size: 50px;
+}
+.CarouselText p:nth-child(3) {
+  font-size: 92px;
+  font-weight: 900;
+}
+.Righticon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  font-size: 25px;
+  z-index: 9999999;
+}
+.Righticon:hover {
+  cursor: pointer;
+  transform: scale(1.3);
+}
+.Lefticon:hover {
+  cursor: pointer;
+  transform: scale(1.3);
+}
+.Lefticon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  font-size: 25px;
+}
+.Starting {
+  display: flex;
+  gap: 10px;
+  max-width: 65%;
+}
+.Starting p:nth-child(1) {
+  font-size: 42px;
+  font-weight: 900;
+}
+.Starting p:nth-child(2) {
+  background-color: rgb(255, 255, 255);
+  padding: 15px 0;
+  font-size: 30px;
+  width: 150px;
+  transform: rotate(-2deg);
+  text-align: center;
+}
+
+@media screen and (max-width: 1240px) {
+  .BoxImg {
+    height: 80vh;
+  }
+  .CarouselText h2 {
+    font-size: 16px !important;
+  }
+  .CarouselText p:nth-child(2) {
+    font-size: 16px !important;
+  }
+  .CarouselText p:nth-child(3) {
+    font-size: 16px !important;
+  }
+  .Starting p:nth-child(1) {
+    font-size: 14px !important;
+    font-weight: 500;
+  }
+  .Starting p:nth-child(2) {
+    background-color: rgb(255, 255, 255);
+    padding: 5px !important;
+    font-size: 10px !important;
+    width: 70px;
+    
+    transform: rotate(-4deg);
+    text-align: center;
+  }
+  .CarouselText {
+    top: 10%;
+  }
+}

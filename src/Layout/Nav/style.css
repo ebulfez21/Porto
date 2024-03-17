@@ -1,0 +1,26 @@
+
+.NavBar img {
+  width: 120px;
+  height: 40px;
+  margin-right: 20px;
+}
+
+#basic-nav-dropdown {
+  color: black !important;
+}
+
+.NavLink {
+  font-size: 14px;
+  font-weight: 800;
+  color: black !important;
+  margin-left: 20px !important;
+}
+.nav-icon {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+.iconContainer {
+  display: flex;
+  gap: 15px;
+}

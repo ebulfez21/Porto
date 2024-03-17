@@ -1,0 +1,134 @@
+.PariceContainer {
+  display: flex;
+  gap: 8px;
+}
+.IconStar {
+  display: flex;
+  color: darkgray;
+  width: 60px;
+  height: auto;
+  color: gold;
+}
+.CategoryName {
+  font-size: 9px !important;
+  margin-top: 8px;
+}
+.PraductName {
+  color: black !important;
+  font-weight: 700;
+}
+.PariceContainer del {
+  color: darkgray;
+}
+.PariceContainer p {
+  color: black !important;
+}
+.PraductContainer {
+  display: grid !important;
+  grid-template-columns: auto auto auto auto auto auto;
+  column-gap: 20px;
+  row-gap: 50px;
+}
+
+.PraductContainer div a {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  position: relative;
+}
+.PraductContainer div a:first-child p {
+  color: rgb(62, 61, 61);
+}
+.Hot {
+  background-color: rgb(12, 171, 28);
+  width: 45px;
+  height: auto;
+  text-align: center;
+  color: aliceblue;
+  border-radius: 10px;
+  padding: 2px;
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  font-size: 14px;
+}
+.cheap {
+  background-color: rgb(255, 77, 0);
+  width: 45px;
+  height: auto;
+  text-align: center;
+  color: aliceblue;
+  border-radius: 10px;
+  padding: 2px;
+  position: absolute;
+  top: 35px;
+  left: 5px;
+  font-size: 14px;
+}
+.ShoppingBag {
+  display: none;
+  position: absolute;
+  right: 5px;
+  top: 10px;
+  color: rgb(150, 150, 150);
+  width: 22px;
+  height: auto;
+}
+.PraductContainer div a:hover .ShoppingBag {
+  display: block;
+}
+.PraductContainer div a:hover .QUICK {
+  display: block;
+}
+.QUICK {
+  display: none;
+  position: absolute;
+  background-color: black;
+  bottom: 90px;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  height: auto;
+  padding: 10px 0;
+  text-align: center;
+  animation: Quick 0.5s;
+}
+@keyframes Quick {
+  0% {
+    bottom: 75px;
+  }
+  100% {
+    bottom: 90px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .PraductContainer {
+    grid-template-columns: auto auto auto auto auto;
+  }
+  .Category {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .PraductContainer {
+    grid-template-columns: auto auto auto auto;
+  }
+
+}
+@media screen and (max-width: 870px) {
+  .PraductContainer {
+    grid-template-columns: auto auto auto;
+  }
+
+}@media screen and (max-width: 650px) {
+  .PraductContainer {
+    grid-template-columns: auto auto;
+  }
+
+}
+@media screen and (max-width: 430px) {
+  .PraductContainer {
+    grid-template-columns: auto;
+  }
+
+}

@@ -1,0 +1,55 @@
+.modalContainer {
+  width: 25vw;
+  height: 100vh;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  z-index: 99999999;
+  animation: modal 1s;
+  
+}
+
+@keyframes modal {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 25vw;
+  }
+}
+
+.ModalContext {
+  animation: modal1 0.9s;
+}
+@keyframes modal1 {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.infoIcon {
+  background-color: transparent;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .modalContainer {
+    width: 65vw;
+  }
+  .ModalContext p {
+    font-size: 16px;
+  }
+  .infoIcon {
+    font-size: 35px;
+  }
+}

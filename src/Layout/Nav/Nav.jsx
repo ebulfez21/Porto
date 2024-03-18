@@ -52,7 +52,7 @@ function CustomNavbar() {
         <div className={`collapse navbar-collapse ${mobileMenuOpen ? 'show' : ''}`} id="navbarNav">
           <ul className="navbar-nav me-auto">
             <li className="nav-item">
-              <a className="nav-link" href="#home">
+              <a className="nav-link" href="#">
                 HOME
               </a>
             </li>
@@ -69,17 +69,17 @@ function CustomNavbar() {
               </a>
               <ul className="dropdown-menu" aria-labelledby="navbarDropdownCategories">
                 <li>
-                  <a className="dropdown-item" href="#action/3.1">
+                  <a className="dropdown-item" href="#">
                     Action
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#action/3.2">
+                  <a className="dropdown-item" href="#">
                     Another action
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#action/3.3">
+                  <a className="dropdown-item" href="#">
                     Something
                   </a>
                 </li>
@@ -87,7 +87,7 @@ function CustomNavbar() {
                   <hr className="dropdown-divider" />
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#action/3.4">
+                  <a className="dropdown-item" href="#">
                     Separated link
                   </a>
                 </li>
@@ -106,17 +106,17 @@ function CustomNavbar() {
               </a>
               <ul className="dropdown-menu" aria-labelledby="navbarDropdownProducts">
                 <li>
-                  <a className="dropdown-item" href="#action/3.1">
+                  <a className="dropdown-item" href="#">
                     Action
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#action/3.2">
+                  <a className="dropdown-item" href="#">
                     Another action
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#action/3.3">
+                  <a className="dropdown-item" href="#">
                     Something
                   </a>
                 </li>
@@ -124,7 +124,7 @@ function CustomNavbar() {
                   <hr className="dropdown-divider" />
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#action/3.4">
+                  <a className="dropdown-item" href="#">
                     Separated link
                   </a>
                 </li>
@@ -143,17 +143,17 @@ function CustomNavbar() {
               </a>
               <ul className="dropdown-menu" aria-labelledby="navbarDropdownPages">
                 <li>
-                  <a className="dropdown-item" href="#action/3.1">
+                  <a className="dropdown-item" href="#">
                     Action
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#action/3.2">
+                  <a className="dropdown-item" href="#">
                     Another action
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#action/3.3">
+                  <a className="dropdown-item" href="#">
                     Something
                   </a>
                 </li>
@@ -161,19 +161,19 @@ function CustomNavbar() {
                   <hr className="dropdown-divider" />
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#action/3.4">
+                  <a className="dropdown-item" href="#">
                     Separated link
                   </a>
                 </li>
               </ul>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#blog">
+              <a className="nav-link" href="#">
                 BLOG
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#byporto">
+              <a className="nav-link" href="#">
                 BY PORTO
               </a>
             </li>

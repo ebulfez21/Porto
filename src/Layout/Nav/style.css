@@ -1,26 +1,72 @@
-
-.NavBar img {
-  width: 120px;
-  height: 40px;
-  margin-right: 20px;
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  z-index: 1000;
 }
 
-#basic-nav-dropdown {
-  color: black !important;
+.navbar-brand img {
+  max-width: 120px;
+  height: auto;
 }
 
-.NavLink {
-  font-size: 14px;
-  font-weight: 800;
-  color: black !important;
-  margin-left: 20px !important;
+.navbar-nav .nav-link {
+  color: #333;
+  font-weight: bold;
 }
-.nav-icon {
-  width: 32px;
-  height: 32px;
-  cursor: pointer;
+
+.navbar-nav .nav-link:hover {
+  color: #ff6347;
 }
-.iconContainer {
+
+.navbar-toggler-icon {
+  border-color: #333;
+}
+
+/* Dropdown */
+.dropdown-menu {
+  background-color: #fff;
+  border: none;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 1001;
+  max-height: 300px; 
+  overflow-y: auto; 
+}
+
+.dropdown-menu .dropdown-item {
+  color: #333;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #f8f9fa;
+}
+
+/* Icons */
+.navbar .iconContainer {
   display: flex;
-  gap: 15px;
+  align-items: center;
+}
+
+.navbar .nav-icon {
+  font-size: 1.5rem;
+  color: #333;
+  margin-left: 10px;
+}
+
+.navbar .nav-icon:hover {
+  color: #ff6347;
+}
+@media (max-width: 992px) {
+  .navbar-collapse.show {
+    background-color: #fff; 
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 20px;
+  }
+
 }

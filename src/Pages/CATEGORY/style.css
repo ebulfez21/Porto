@@ -1,41 +1,10 @@
 .CategoryContainer {
   display: grid;
   grid-template-columns: auto auto auto auto auto auto;
-  
+
   gap: 15px;
 }
 
-@media screen and (max-width: 1400px) {
-  .CategoryContainer {
-    grid-template-columns: auto auto auto auto auto;
-    justify-content: center;
-    
-  }
- 
-}
-@media screen and (max-width: 1100px) {
-  .CategoryContainer {
-    grid-template-columns: auto auto auto auto;
-  }
-
-}
-@media screen and (max-width: 870px) {
-  .CategoryContainer {
-    grid-template-columns: auto auto auto;
-  }
-
-}@media screen and (max-width: 650px) {
-  .CategoryContainer {
-    grid-template-columns: auto auto;
-  }
-
-}
-@media screen and (max-width: 430px) {
-  .CategoryContainer {
-    grid-template-columns: auto;
-  }
-
-}
 .CategoryContainer div a {
   display: flex;
   flex-direction: column;
@@ -69,4 +38,34 @@
 }
 .Praductsnumber {
   font-size: 9px;
+}
+@media screen and (max-width: 1400px) {
+  .CategoryContainer {
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .CategoryContainer {
+    grid-template-columns: auto auto auto auto;
+  }
+}
+@media screen and (max-width: 870px) {
+  .CategoryContainer {
+    grid-template-columns: auto auto auto;
+  }
+}
+@media screen and (max-width: 650px) {
+  .CategoryContainer {
+    grid-template-columns: auto auto;
+  }
+  .Category img {
+    width: 100%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 430px) {
+  .CategoryContainer {
+    grid-template-columns: auto;
+  }
 }

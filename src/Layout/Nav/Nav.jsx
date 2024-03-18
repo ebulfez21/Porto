@@ -1,111 +1,194 @@
+import  { useState, useEffect } from "react";
 import "./style.css";
-import { CiSearch } from "react-icons/ci";
-import { CiHeart } from "react-icons/ci";
-import { GrUserManager } from "react-icons/gr";
-
-
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
-import Carousel from "../../components/Carusel/Carusel";
-import Info from "../../components/Info";
 import { MdOutlineShoppingBag } from "react-icons/md";
+import { GrUserManager } from "react-icons/gr";
+import { CiHeart, CiSearch } from "react-icons/ci";
+import Info from "../../components/Info";
 
-function BasicExample() {
+function CustomNavbar() {
+  const [scrolling, setScrolling] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setScrolling(true);
+      } else {
+        setScrolling(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!mobileMenuOpen);
+  };
+
   return (
-    <>
-      <Navbar expand='lg' className='bg-body-tertiary  '>
-        <Container >
-          <Navbar.Brand href='/' className='NavBar'>
-            <img
-              src='https://portotheme.com/html/porto_ecommerce/assets/images/logo-black.png'
-              alt=''
-            />
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls='basic-navbar-nav' />
-          <Navbar.Collapse id='basic-navbar-nav '>
-            <Nav className='me-auto '>
-              <Nav.Link className='NavLink' href='#home'>
+    <nav className={`navbar navbar-expand-lg navbar-light bg-${scrolling ? 'white' : 'transparent'}`}>
+      <div className="container">
+        <a className="navbar-brand" href="/">
+          <img
+            src="https://portotheme.com/html/porto_ecommerce/assets/images/logo-black.png"
+            alt=""
+            width="120"
+            height="auto"
+          />
+        </a>
+        <button
+          className="navbar-toggler"
+          type="button"
+          onClick={toggleMobileMenu}
+          aria-expanded={mobileMenuOpen ? "true" : "false"}
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className={`collapse navbar-collapse ${mobileMenuOpen ? 'show' : ''}`} id="navbarNav">
+          <ul className="navbar-nav me-auto">
+            <li className="nav-item">
+              <a className="nav-link" href="#home">
                 HOME
-              </Nav.Link>
-              <NavDropdown
-                className='NavLink '
-                title='CATAGORIES'
-                id='basic-nav-dropdown'
+              </a>
+            </li>
+            <li className="nav-item dropdown">
+              <a
+                className="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownCategories"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
               >
-                <NavDropdown.Item className='NavLink' href='#action/3.1'>
-                  Action
-                </NavDropdown.Item>
-                <NavDropdown.Item className='NavLink' href='#action/3.2'>
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Item className='NavLink' href='#action/3.3'>
-                  Something
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item className='NavLink' href='#action/3.4'>
-                  Separated link
-                </NavDropdown.Item>
-              </NavDropdown>
-              <NavDropdown
-                className='NavLink'
-                title='PRADUCTS'
-                id='basic-nav-dropdown'
+                CATEGORIES
+              </a>
+              <ul className="dropdown-menu" aria-labelledby="navbarDropdownCategories">
+                <li>
+                  <a className="dropdown-item" href="#action/3.1">
+                    Action
+                  </a>
+                </li>
+                <li>
+                  <a className="dropdown-item" href="#action/3.2">
+                    Another action
+                  </a>
+                </li>
+                <li>
+                  <a className="dropdown-item" href="#action/3.3">
+                    Something
+                  </a>
+                </li>
+                <li>
+                  <hr className="dropdown-divider" />
+                </li>
+                <li>
+                  <a className="dropdown-item" href="#action/3.4">
+                    Separated link
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li className="nav-item dropdown">
+              <a
+                className="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownProducts"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
               >
-                <NavDropdown.Item className='NavLink' href='#action/3.1'>
-                  Action
-                </NavDropdown.Item>
-                <NavDropdown.Item className='NavLink' href='#action/3.2'>
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Item className='NavLink' href='#action/3.3'>
-                  Something
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item className='NavLink' href='#action/3.4'>
-                  Separated link
-                </NavDropdown.Item>
-              </NavDropdown>
-              <NavDropdown
-                className='NavLink'
-                title='PAGES'
-                id='basic-nav-dropdown'
+                PRODUCTS
+              </a>
+              <ul className="dropdown-menu" aria-labelledby="navbarDropdownProducts">
+                <li>
+                  <a className="dropdown-item" href="#action/3.1">
+                    Action
+                  </a>
+                </li>
+                <li>
+                  <a className="dropdown-item" href="#action/3.2">
+                    Another action
+                  </a>
+                </li>
+                <li>
+                  <a className="dropdown-item" href="#action/3.3">
+                    Something
+                  </a>
+                </li>
+                <li>
+                  <hr className="dropdown-divider" />
+                </li>
+                <li>
+                  <a className="dropdown-item" href="#action/3.4">
+                    Separated link
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li className="nav-item dropdown">
+              <a
+                className="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownPages"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
               >
-                <NavDropdown.Item className='NavLink' href='#action/3.1'>
-                  Action
-                </NavDropdown.Item>
-                <NavDropdown.Item className='NavLink' href='#action/3.2'>
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Item className='NavLink' href='#action/3.3'>
-                  Something
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item className='NavLink' href='#action/3.4'>
-                  Separated link
-                </NavDropdown.Item>
-              </NavDropdown>
-              <Nav.Link className='NavLink' href='#link'>
+                PAGES
+              </a>
+              <ul className="dropdown-menu" aria-labelledby="navbarDropdownPages">
+                <li>
+                  <a className="dropdown-item" href="#action/3.1">
+                    Action
+                  </a>
+                </li>
+                <li>
+                  <a className="dropdown-item" href="#action/3.2">
+                    Another action
+                  </a>
+                </li>
+                <li>
+                  <a className="dropdown-item" href="#action/3.3">
+                    Something
+                  </a>
+                </li>
+                <li>
+                  <hr className="dropdown-divider" />
+                </li>
+                <li>
+                  <a className="dropdown-item" href="#action/3.4">
+                    Separated link
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#blog">
                 BLOG
-              </Nav.Link>
-              <Nav.Link className='NavLink' href='#link'>
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#byporto">
                 BY PORTO
-              </Nav.Link>
-            </Nav>
-            <div className='iconContainer'>
-              <CiSearch className='nav-icon' />
+              </a>
+            </li>
+          </ul>
+          <div className="iconContainer">
+          <CiSearch className='nav-icon' />
               <GrUserManager className='nav-icon' />
               <CiHeart className='nav-icon' />
               <MdOutlineShoppingBag className='nav-icon' />
               <Info className='nav-icon' />
-            </div>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
-      <Carousel />
-    </>
+          </div>
+        </div>
+      </div>
+    </nav>
   );
 }
 
-export default BasicExample;
+export default CustomNavbar;

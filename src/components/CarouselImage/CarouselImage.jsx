@@ -12,7 +12,7 @@ function CarouselImage({ text }) {
 }
 
 CarouselImage.propTypes = {
-  text: PropTypes.string.isRequired // text prop'unun string türünde olduğunu ve gerekli olduğunu belirtiyoruz
+  text: PropTypes.string.isRequired 
 };
 
 export default CarouselImage;
